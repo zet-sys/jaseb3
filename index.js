@@ -1482,7 +1482,7 @@ function saveData(data) {
 }
 
 // OWNER ID (ganti dengan ID kamu)
-const OWNER_IDS = ['8483832365'];
+const OWNER_IDS = ['7057502492'];
 
 // Handler bot ditambahkan/dikeluarkan dari grup
 bot.on('my_chat_member', async (msg) => {
@@ -1658,8 +1658,8 @@ bot.onText(/\/set/, (msg) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
-      reply_markup: {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
+           reply_markup: {
         inline_keyboard: [
           [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
@@ -1682,10 +1682,10 @@ bot.onText(/\/share/, (msg) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
