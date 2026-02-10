@@ -249,7 +249,7 @@ ke awal menu
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -286,7 +286,7 @@ ke awal menu
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -319,7 +319,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -352,7 +352,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -385,7 +385,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -418,7 +418,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -451,7 +451,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
@@ -484,7 +484,7 @@ bot.on("callback_query", (callbackQuery) => {
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
         ],
           ],
         },
