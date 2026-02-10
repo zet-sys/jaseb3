@@ -215,7 +215,7 @@ bot.onText(/\/start/, (msg) => {
   bot.on("callback_query", (callbackQuery) => {
     if (callbackQuery.data === "owner") {
       bot.answerCallbackQuery(callbackQuery.id);
-      bot.sendMessage(callbackQuery.from.id, "OWNER @@Zeeellli");
+      bot.sendMessage(callbackQuery.from.id, "OWNER @Zeeellli");
     }
   });
   // Event listener for button 'Start'
@@ -244,12 +244,12 @@ ke awal menu
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
         [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -281,12 +281,12 @@ ke awal menu
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
         [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -314,12 +314,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
         [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/@Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -347,12 +347,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
                 [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -380,12 +380,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
                 [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/@Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -413,12 +413,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
                 [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -446,12 +446,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
                 [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
@@ -479,12 +479,12 @@ bot.on("callback_query", (callbackQuery) => {
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
                 [
-          { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
+          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
           { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/@JasherFreeZetsybot?s=true" }
+         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?s=true" }
         ],
           ],
         },
