@@ -1444,9 +1444,9 @@ bot.onText(/\/cekid/, (msg) => {
       inline_keyboard: [
         [
           { text: "Testimoni", url: "https://t.me/abouzetzyy" },
-          { text: "List Produk Lainnya", url: "https://t.me/@Zeeellli" },
+          { text: "List Produk Lainnya", url: "https://t.me/Zeeellli" },
         ],
-        [{ text: "OWNER", url: "https://t.me/@Zeeellli" }],
+        [{ text: "OWNER", url: "https://t.me/Zeeellli" }],
       ],
     },
   };
@@ -1600,7 +1600,7 @@ setInterval(() => {
         parse_mode: "Markdown",
         reply_markup: {
           inline_keyboard: [
-            [{ text: "💎 Beli Akses", url: "https://t.me/@Zeeellli" }]
+            [{ text: "💎 Beli Akses", url: "https://t.me/Zeeellli" }]
           ]
         }
       }).catch(() => {});
@@ -1661,7 +1661,7 @@ bot.onText(/\/set/, (msg) => {
     bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -1718,7 +1718,7 @@ bot.onText(/\/auto/, (msg) => {
       {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "Hubungi Admin", url: "https://t.me/@Zeeellli" }],
+            [{ text: "Hubungi Admin", url: "https://t.me/Zeeellli" }],
           ],
         },
       }
@@ -1762,8 +1762,8 @@ bot.onText(/\/panel/, (msg) => {
     const keyboard = {
         reply_markup: {
             inline_keyboard: [
-                [{ text: '🖥️ Buy Panel', url: 'https://t.me/@Zeeellli/buy_panel' }, { text: '👤 Buy Admin', url: 'https://t.me/@Zeeellli/buyadminp & ptpanel' }],
-                [{ text: '🇲🇨 Buy Vps', url: 'https://t.me/@Zeeellli/buyvps' }]
+                [{ text: '🖥️ Buy Panel', url: 'https://t.me/Zeeellli/buy_panel' }, { text: '👤 Buy Admin', url: 'https://t.me/@Zeeellli/buyadminp & ptpanel' }],
+                [{ text: '🇲🇨 Buy Vps', url: 'https://t.me/Zeeellli/buyvps' }]
             ]
         }
     };
@@ -1795,10 +1795,10 @@ bot.onText(/\/1gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -1945,10 +1945,10 @@ bot.onText(/\/2gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -2098,9 +2098,9 @@ bot.onText(/\/3gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
-        inline_keyboard: [[{ text: "HUBUNGI ADMIN", url: "@t.me/@Zeeellli" }]],
+        inline_keyboard: [[{ text: "HUBUNGI ADMIN", url: "@t.me/Zeeellli" }]],
       },
     });
     return;
@@ -2246,9 +2246,9 @@ bot.onText(/\/4gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL, MINTA SANA AMA SI ZET...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG, MINTA SANA AMA SI ZET...", {
       reply_markup: {
-        inline_keyboard: [[{ text: "HUBUNGI ADMIN", url: "@@Zeeellli" }]],
+        inline_keyboard: [[{ text: "HUBUNGI ADMIN", url: "@Zeeellli" }]],
       },
     });
     return;
@@ -2397,10 +2397,10 @@ bot.onText(/\/5gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL, MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG, MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -2554,7 +2554,7 @@ bot.onText(/\/delsrv (.+)/, async (msg, match) => {
       {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "Hubungi Admin", url: "https://t.me/@Zeeellli" }],
+            [{ text: "Hubungi Admin", url: "https://t.me/Zeeellli" }],
           ],
         },
       }
@@ -2600,10 +2600,10 @@ bot.onText(/\/6gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -2750,10 +2750,10 @@ bot.onText(/\/7gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/l@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -2899,10 +2899,10 @@ bot.onText(/\/8gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -3052,10 +3052,10 @@ bot.onText(/\/9gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -3205,10 +3205,10 @@ bot.onText(/\/10gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -3355,10 +3355,10 @@ bot.onText(/\/11gb (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -3508,10 +3508,10 @@ bot.onText(/\/unli (.+)/, async (msg, match) => {
   const premiumUsers = JSON.parse(fs.readFileSync(premiumUsersFile));
   const isPremium = premiumUsers.includes(String(msg.from.id));
   if (!isPremium) {
-    bot.sendMessage(chatId, "DI ADDPREM DULU KONTOL,MINTA AMA SI ZET SANA...", {
+    bot.sendMessage(chatId, "DI ADDPREM DULU SAYANG,MINTA AMA SI ZET SANA...", {
       reply_markup: {
         inline_keyboard: [
-          [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+          [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
         ],
       },
     });
@@ -3664,7 +3664,7 @@ bot.onText(/\/createadmin (.+)/, async (msg, match) => {
       {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+            [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
           ],
         },
       }
@@ -3766,7 +3766,7 @@ bot.onText(/\/listsrv/, async (msg) => {
       {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+            [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
           ],
         },
       }
@@ -3825,11 +3825,11 @@ bot.onText(/\/listadmin/, async (msg) => {
   if (!isAdmin) {
     bot.sendMessage(
       chatId,
-      "KHUSUS OWNER TOLOL SONO MINTA ADD OWNER SAMA SI ZET..",
+      "KHUSUS OWNER SAYANG SONO MINTA ADD OWNER SAMA SI ZET..",
       {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "HUBUNGI ADMIN", url: "https://t.me/@Zeeellli" }],
+            [{ text: "HUBUNGI ADMIN", url: "https://t.me/Zeeellli" }],
           ],
         },
       }
@@ -3905,15 +3905,15 @@ bot.onText(/\/panel/, (msg) => {
 
 UNTUK ID TELE NYA BISA CEK KETIK /cekidtelegram
 
-𝗕𝘂𝘆 𝗣𝗿𝗲𝗺? 𝗕𝘂𝘆 𝗩𝗽𝘀? 𝗕𝘂𝘆 𝗔𝗱𝗺𝗶𝗻𝗣&𝗣𝘁 𝗣𝗮𝗻𝗲𝗹? 𝗕𝘂𝘆 𝗦𝗰? 𝗣𝘃 (@@Zeeellli)`;
+𝗕𝘂𝘆 𝗣𝗿𝗲𝗺? 𝗕𝘂𝘆 𝗩𝗽𝘀? 𝗕𝘂𝘆 𝗔𝗱𝗺𝗶𝗻𝗣&𝗣𝘁 𝗣𝗮𝗻𝗲𝗹? 𝗕𝘂𝘆 𝗦𝗰? 𝗣𝘃 (@Zeeellli)`;
   const keyboard = {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: "🖥️ Buy Panel", url: "https://t.me/@Zeeellli" },
-          { text: "👤 Buy Admin", url: "https://t.me/@Zeeellli" },
+          { text: "🖥️ Buy Panel", url: "https://t.me/Zeeellli" },
+          { text: "👤 Buy Admin", url: "https://t.me/Zeeellli" },
         ],
-        [{ text: "👾 Buy Vps", url: "https://t.me/@Zeeellli" }],
+        [{ text: "👾 Buy Vps", url: "https://t.me/Zeeellli" }],
       ],
     },
   };
