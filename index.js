@@ -201,8 +201,8 @@ bot.onText(/\/start/, (msg) => {
   const menuText = `
 ╭━━━━━━━━━━━━━━━━━━━━━━❍
 ┃ ʙᴏᴛ ɴᴀᴍᴇ : ᴢᴇᴛᴢʏ✦ ᴊᴀsʜᴇʀ
-┃ ᴅᴇᴠᴇʟᴏᴘᴇʀ : @@Zeeellli
-┃ ʙᴜʏ sᴄ : @@Zeeellli
+┃ ᴅᴇᴠᴇʟᴏᴘᴇʀ : @Zeeellli
+┃ ʙᴜʏ sᴄ : @Zeeellli
 ┃ ᴠᴇʀsɪᴏɴ : ᴠɪᴘ ʙᴜʏ ᴏɴʟʏ 
 ┃ ʀᴜɴᴛɪᴍᴇ : ${getRuntime(startTime)}
 ╰━━━━━━━━━━━━━━━━━━━━━━❍
@@ -245,7 +245,7 @@ ke awal menu
         ],
         [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -282,7 +282,7 @@ ke awal menu
         ],
         [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -348,7 +348,7 @@ bot.on("callback_query", (callbackQuery) => {
         ],
                 [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -414,7 +414,7 @@ bot.on("callback_query", (callbackQuery) => {
         ],
                 [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -447,7 +447,7 @@ bot.on("callback_query", (callbackQuery) => {
         ],
                 [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -480,7 +480,7 @@ bot.on("callback_query", (callbackQuery) => {
         ],
                 [
           { text: "TESTIMONI", 'url': "https://t.me/abouzetzyy" },
-          { text: "OWNER", 'url': "t.me/@Zeeellli" },
+          { text: "OWNER", 'url': "t.me/Zeeellli" },
           { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
          ],
          [
@@ -600,7 +600,7 @@ bot.onText(/\/dana/, (msg) => {
     bot.sendMessage(chatId, "DANA\n0895321308269\nA/N Iwa******o\n\nSERTAKAN KIRIM PEMBUKTIAN\nTRANSFER KE OWNER,\nUNTUK MELANJUTKAN TRANSAKSI.", {
         'reply_markup' :{
             'inline_keyboard': [[{ 'text': 'CHANEL', 'url': 'https://t.me/abouzetzyy'},
-            { 'text': 'OWNER', 'url': 'https://t.me/@Zeeellli'}]]
+            { 'text': 'OWNER', 'url': 'https://t.me/Zeeellli'}]]
         }
     })
 })
