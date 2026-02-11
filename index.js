@@ -13,7 +13,6 @@ const premiumUsersFile = "premiumUsers.json";
 const domain = settings.domain;
 const plta = settings.plta;
 const pltc = settings.pltc;
-const REQUIRED_CHANNEL = "@aboutzetzyy";
 
   return false;
 }
@@ -145,7 +144,7 @@ function loadVideoToCache() {
   return null;
 }
  // ganti dengan channel/group kamu
-
+const REQUIRED_CHANNEL = "@aboutzetzyy";
 // fungsi cek join
 async function isMember(chatId) {
   try {
