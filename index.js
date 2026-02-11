@@ -142,42 +142,6 @@ function loadVideoToCache() {
   return null;
 }
  // ganti dengan channel/group kamu
-const REQUIRED_CHANNEL = "@aboutzetzyy";
-// fungsi cek join
-async function isMember(chatId) {
-  try {
-    const member = await bot.getChatMember(REQUIRED_CHANNEL, chatId);
-    return ["creator", "administrator", "member"].includes(member.status);
-  } catch {
-    return false; // kalau belum join atau bot gak bisa cek
-  }
-}
-
-// contoh pemakaian di command/fungsi manapun
-if (!(await isMember(msg.from.id))) {
-  return bot.sendMessage(msg.chat.id, "⚠️ Kamu harus join channel dulu!", {
-    reply_markup: {
-      inline_keyboard: [
-        [{ text: "Join Channel", url: "https://t.me/YourChannel" }],
-        [{ text: "Sudah Join ✅", callback_data: "check_join" }]
-      ]
-    }
-  });
-}
-
-// tombol "Sudah Join"
-bot.on('callback_query', async (query) => {
-  if (query.data === "check_join") {
-    if (await isMember(query.from.id)) {
-      bot.editMessageText("Terima kasih sudah join! Sekarang bisa pakai fitur.", {
-        chat_id: query.message.chat.id,
-        message_id: query.message.message_id
-      });
-    } else {
-      bot.answerCallbackQuery(query.id, { text: "Kamu belum join channel!", show_alert: true });
-    }
-  }
-});
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // Command /updateproxy untuk memperbarui proxy
@@ -229,11 +193,51 @@ bot.on('message', (msg) => {
         }
     }
 });
-bot.onText(/\/start/, (msg) => {
+const REQUIRED_CHANNEL = "@aboutzetzyy"; // channel wajib join
+
+// Fungsi cek join
+async function isMember(chatId) {
+  try {
+    const member = await bot.getChatMember(REQUIRED_CHANNEL, chatId);
+    return ["creator", "administrator", "member"].includes(member.status);
+  } catch {
+    return false; // user belum join atau bot tidak bisa cek
+  }
+}
+
+// Handler /start
+bot.onText(/\/start/, async (msg) => { // <-- async supaya bisa pakai await
   const chatId = msg.chat.id;
   const startTime = Date.now();
   const cachedVideo = loadVideoToCache();
-  
+
+  // ===== Cek wajib join channel =====
+  if (!(await isMember(chatId))) {
+    return bot.sendMessage(chatId, "⚠️ Kamu harus join channel @aboutzetzyy dulu sebelum pakai bot!", {
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: "Join Channel", url: "https://t.me/aboutzetzyy" }],
+          [{ text: "Sudah Join ✅", callback_data: "check_join" }]
+        ]
+      }
+    });
+  }
+
+  // ===== Tombol "Sudah Join" =====
+  bot.on('callback_query', async (query) => {
+    if (query.data === "check_join") {
+      if (await isMember(query.from.id)) {
+        bot.editMessageText("Terima kasih sudah join @aboutzetzyy! Sekarang bisa pakai bot.", {
+          chat_id: query.message.chat.id,
+          message_id: query.message.message_id
+        });
+      } else {
+        bot.answerCallbackQuery(query.id, { text: "Kamu belum join channel!", show_alert: true });
+      }
+    }
+  });
+
+  // ===== Kode /start asli kamu =====
   const menuText = `
 ╭━━━━━━━━━━━━━━━━━━━━━━❍
 ┃ ʙᴏᴛ ɴᴀᴍᴇ : ᴢᴇᴛᴢʏ✦ ᴊᴀsʜᴇʀ
@@ -247,6 +251,7 @@ bot.onText(/\/start/, (msg) => {
 ┃ [ sᴇʟᴇᴄᴛ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ]
 ╰━━━━━━━━━━━━━━━━━━━━━━❍
 © 𝗭𝗘𝗧𝗭𝗬`;
+
   // Event listener for button 'My Profil'
   bot.on("callback_query", (callbackQuery) => {
     if (callbackQuery.data === "owner") {
@@ -254,6 +259,7 @@ bot.onText(/\/start/, (msg) => {
       bot.sendMessage(callbackQuery.from.id, "OWNER @Zeeellli");
     }
   });
+
   // Event listener for button 'Start'
   bot.on("callback_query", (callbackQuery) => {
     if (callbackQuery.data === "start") {
@@ -271,22 +277,22 @@ ke awal menu
           inline_keyboard: [
             [
               { text: "JASHER", callback_data: "cekid" },
-          { text: "PAYMENT", callback_data: "payment" },
-          { text: "CPANEL", callback_data: "createpanel" },
-        ],
-        [
-          { text: "OWNERMENU", callback_data: "ownermenu" },
-          { text: "INSTALLMENU", callback_data: "installmenu" },
-          { text: "DOWNLOADMENU", callback_data: "download" },
-        ],
-        [
-          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
-          { text: "OWNER", 'url': "t.me/Zeeellli" },
-          { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
-         ],
-         [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
-        ],
+              { text: "PAYMENT", callback_data: "payment" },
+              { text: "CPANEL", callback_data: "createpanel" },
+            ],
+            [
+              { text: "OWNERMENU", callback_data: "ownermenu" },
+              { text: "INSTALLMENU", callback_data: "installmenu" },
+              { text: "DOWNLOADMENU", callback_data: "download" },
+            ],
+            [
+              { text: "TESTIMONI", url: "https://t.me/aboutzetzyy" },
+              { text: "OWNER", url: "t.me/Zeeellli" },
+              { text: "ROOM PUBLIC", url: "https://t.me/grubpubliczet" },
+            ],
+            [
+              { text: "➕ ADD GROUP", url: "https://t.me/JasherFreeZetsybot?startgroup=true" }
+            ],
           ],
         },
       };
@@ -299,15 +305,15 @@ ke awal menu
       });
     }
   });
-  //▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰//
-  // ramlist2
+
+  // Menu utama
   const message = menuText;
   const keyboard = {
     caption: message,
     reply_markup: {
       inline_keyboard: [
         [
-      { text: "JASHER", callback_data: "cekid" },
+          { text: "JASHER", callback_data: "cekid" },
           { text: "PAYMENT", callback_data: "payment" },
           { text: "CPANEL", callback_data: "createpanel" },
         ],
@@ -317,16 +323,17 @@ ke awal menu
           { text: "DOWNLOADMENU", callback_data: "download" },
         ],
         [
-          { text: "TESTIMONI", 'url': "https://t.me/aboutzetzyy" },
-          { text: "OWNER", 'url': "t.me/Zeeellli" },
-          { text:"ROOM PUBLIC", 'url': "https://t.me/grubpubliczet" },
-         ],
-         [
-         { text: '➕ ADD GROUP', 'url': "https://t.me/JasherFreeZetsybot?startgroup=true" }
+          { text: "TESTIMONI", url: "https://t.me/aboutzetzyy" },
+          { text: "OWNER", url: "t.me/Zeeellli" },
+          { text: "ROOM PUBLIC", url: "https://t.me/grubpubliczet" },
         ],
-          ],
-        },
-      };
+        [
+          { text: "➕ ADD GROUP", url: "https://t.me/JasherFreeZetsybot?startgroup=true" }
+        ],
+      ],
+    },
+  };
+
   bot.sendVideo(chatId, cachedVideo, keyboard);
 });
 bot.on("callback_query", (callbackQuery) => {
