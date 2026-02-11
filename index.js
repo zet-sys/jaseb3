@@ -213,7 +213,7 @@ bot.onText(/\/start/, async (msg) => { // <-- async supaya bisa pakai await
 
   // ===== Cek wajib join channel =====
   if (!(await isMember(chatId))) {
-    return bot.sendMessage(chatId, "⚠️ Kamu harus join channel @aboutzetzyy dulu sebelum pakai bot!", {
+    return bot.sendMessage(chatId, "⚠️ Kamu harus join channel ini dulu ya sayanggg sebelum pakai bot!", {
       reply_markup: {
         inline_keyboard: [
           [{ text: "Join Channel", url: "https://t.me/aboutzetzyy" }],
@@ -227,7 +227,7 @@ bot.onText(/\/start/, async (msg) => { // <-- async supaya bisa pakai await
   bot.on('callback_query', async (query) => {
     if (query.data === "check_join") {
       if (await isMember(query.from.id)) {
-        bot.editMessageText("Terima kasih sudah join @aboutzetzyy! Sekarang bisa pakai bot.", {
+        bot.editMessageText("Makasih ya sayang udah join channel nya😘 Sekarang kamu bisa pakai bot.", {
           chat_id: query.message.chat.id,
           message_id: query.message.message_id
         });
