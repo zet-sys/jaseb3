@@ -14,8 +14,6 @@ const domain = settings.domain;
 const plta = settings.plta;
 const pltc = settings.pltc;
 
-  return false;
-}
 let targetGroups = new Set();
 let autoForwardInterval = null;
 let forwardChatId = null;
