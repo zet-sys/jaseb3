@@ -13,6 +13,7 @@ const premiumUsersFile = "premiumUsers.json";
 const domain = settings.domain;
 const plta = settings.plta;
 const pltc = settings.pltc;
+const REQUIRED_CHANNEL = "@aboutzetzyy";
 
   return false;
 }
@@ -143,8 +144,43 @@ function loadVideoToCache() {
   }
   return null;
 }
+ // ganti dengan channel/group kamu
 
+// fungsi cek join
+async function isMember(chatId) {
+  try {
+    const member = await bot.getChatMember(REQUIRED_CHANNEL, chatId);
+    return ["creator", "administrator", "member"].includes(member.status);
+  } catch {
+    return false; // kalau belum join atau bot gak bisa cek
+  }
+}
 
+// contoh pemakaian di command/fungsi manapun
+if (!(await isMember(msg.from.id))) {
+  return bot.sendMessage(msg.chat.id, "⚠️ Kamu harus join channel dulu!", {
+    reply_markup: {
+      inline_keyboard: [
+        [{ text: "Join Channel", url: "https://t.me/YourChannel" }],
+        [{ text: "Sudah Join ✅", callback_data: "check_join" }]
+      ]
+    }
+  });
+}
+
+// tombol "Sudah Join"
+bot.on('callback_query', async (query) => {
+  if (query.data === "check_join") {
+    if (await isMember(query.from.id)) {
+      bot.editMessageText("Terima kasih sudah join! Sekarang bisa pakai fitur.", {
+        chat_id: query.message.chat.id,
+        message_id: query.message.message_id
+      });
+    } else {
+      bot.answerCallbackQuery(query.id, { text: "Kamu belum join channel!", show_alert: true });
+    }
+  }
+});
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 // Command /updateproxy untuk memperbarui proxy
